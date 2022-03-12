@@ -1,0 +1,82 @@
+/*donation start*/
+.summary.card-body.entry-summary{
+    margin-top: 0;
+}
+.give-form-title.entry-title{
+    font-size: 36px;
+    line-height: 40px;
+    display: block;
+    margin-bottom: 30px;
+    color: #000;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.featured-card-big .card-body .gesus-progressbar{
+    margin-top: 0;
+}
+.give-goal-progress{
+    margin-bottom: 15px;
+}
+
+.give-form-content-wrap.give_pre_form-content{
+    margin-bottom: 30px;
+}
+.give-total-wrap span,
+.give-total-wrap label,
+legend{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 25px 0;
+}
+.give-total-wrap input{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    margin-top: 0;
+}
+
+.give-donation-levels-wrap.give-list-inline li {
+    display: inline-block;
+}
+.give-donation-levels-wrap.give-list-inline li .give-btn
+ {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    padding: 5px 30px;
+    border: 1px solid #707070;
+    margin-right: 14px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.give-donation-levels-wrap.give-list-inline li .give-btn:hover,
+.give-submit.give-btn:hover{
+    background: #BF0930;
+    color: #fff;
+}
+.give-payment-mode-label{
+    margin: 25px 0;
+}
+#give-gateway-radio-list li{
+    display: inline-block ;
+    margin-right: 10px;
+}
+#give_purchase_form_wrap input,
+#give_purchase_form_wrap textarea{
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+#give-anonymous-donation,
+#give_agree_to_terms-1009{
+    display: inline-block !important;
+    width: auto !important;
+}

@@ -1,0 +1,546 @@
+/* wp extra css start */
+  .filter-right-side form{
+    width: 210px !important;
+}
+
+.gesus-product-categories-side .widgets:first-child{
+  margin-top: 9px !important;
+  border: none;
+}
+.gesus-product-categories-side .widgets:first-child label{
+  display: none;
+}
+.gesus-product-categories-side .widgets:first-child button{
+  min-width: 40px;
+  background: #BF0930;
+  justify-content: center;
+  color: #fff;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  margin: 0;
+  border-bottom-left-radius: 0;
+}
+.gesus-product-categories-side .widgets:first-child input{
+  width: 100%;
+  color: #A4A4A4;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 14px;
+}
+.widget_price_filter .ui-slider .ui-slider-handle{
+  height: 11px;
+  width: 11px;
+  background: #BF0930;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 0;
+}
+.widget_price_filter .ui-slider .ui-slider-handle:last-child{
+    margin-left: 0;
+}
+.widget_price_filter .ui-slider-horizontal{
+    height: 5px;
+    background: #707070;
+    border-radius: 4px;
+    border: none;
+}
+.widget_price_filter .ui-slider .ui-slider-range{
+    background: #BF0930;
+}
+.gesus-product-card{
+    margin: 0;
+}
+.gesus-product-card .product-thumb img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.gesus-product-categories-side .widgets{
+    margin-top: 25px;
+}
+
+
+
+@media(max-width: 1100px){
+  .gesus-footer-top{
+      overflow: hidden;
+      padding: 15px;
+  }
+}
+@media(max-width: 991px){
+    .gesus-main-menu-header-wraper .main-menu-wrapper{
+        display: none;
+    }
+  .menu-right-side .btn.gesus-btn{
+      display: none;
+  }
+  .menu-right-side{
+      text-align: right;
+  }
+  .gesus-sticky-header .elementor-column-gap-no{
+      flex-wrap: nowrap !important;
+  }
+  .gesus-sticky-header .elementor-column-gap-default{
+      flex-wrap: nowrap !important;
+  }
+  .gesus-sticky-header{
+      padding: 15px;
+  }
+  .gesus-mobile-menu{
+      display: block !important;
+  }
+  .gesus-overlay{
+      display: block !important;
+  }
+}
+
+@media(max-width: 575px){
+  .gesus-subscribe-newsletter-wrp form p{
+      display: block;
+  }
+  .gesus-footer-top p{
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+  .gesus-subscribe div{
+      width: 100% !important;
+  }
+  .gesus-subscribe{
+      padding: 15px;
+  }
+  .gesus-subscribe .gesus-btn{
+      margin: 0 auto;
+  }
+}
+
+
+
+
+/* thank you page css start */
+.gesus-product-ralated-section .container {
+    position: relative;
+}
+.gesus-product-ralated-section .container .swiper-arrow {
+    position: absolute;
+    right: -100px;
+    top: 47%;
+    width: 60px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.15);
+}
+.gesus-product-ralated-section .container .swiper-arrow:hover {
+    background: #BF0930;
+    color: #fff;
+}
+.gesus-product-ralated-section .container .swiper-arrow.slider-prev {
+    right: auto;
+    left: -100px;
+}
+
+.thank-you-section .container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.thank-you-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.thank-you-wrapper .thank-you-area {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.thank-you-wrapper .thank-you-area ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.thank-you-wrapper .thank-you-area ul li {
+    position: relative;
+    z-index: 1;
+}
+.thank-you-wrapper .thank-you-area ul li img {
+    max-width: 100%;
+}
+.thank-you-wrapper .thank-you-area ul li:after {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 3px;
+    top: 2px;
+    height: 30px;
+    width: 50px;
+    background: #fff;
+    z-index: -1;
+}
+.thank-you-wrapper .thank-you-area ul li:before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 46px;
+    top: 50%;
+    height: 2px;
+    width: 68px;
+    border-radius: 50%;
+    z-index: -1;
+    border: 1px dotted #BF0930;
+}
+.thank-you-wrapper .thank-you-area ul li:last-child:before {
+    display: none;
+}
+.thank-you-wrapper .thank-you-area h2 {
+    font-size: 90px;
+    line-height: 104px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BF0930;
+    margin-top: 15px;
+}
+.thank-you-wrapper .thank-you-area span {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    margin-top: 10px;
+}
+.thank-you-wrapper .thank-you-area p {
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+}
+.thank-you-wrapper .thank-you-area p b {
+    font-weight: 500;
+    color: #000;
+}
+
+.delivery-date h6 {
+    font-family: var(--font-roboto);
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.delivery-date .delivery-date-table {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.delivery-date .delivery-date-table .table {
+    text-align: right;
+    vartical-align: middle;
+}
+.delivery-date .delivery-date-table .table td {
+    vertical-align: middle !important;
+}
+.delivery-date .delivery-date-table .table .images {
+    width: 80px;
+}
+.delivery-date .delivery-date-table .order-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.delivery-date .delivery-date-table .order-view p a {
+    color: rgba(0, 0, 0, 0.7);
+}
+.delivery-date .delivery-date-table .order-view .order-view-btn {
+    display: inline-block;
+    background: rgba(191, 9, 48, 0.1);
+    border-radius: 3px;
+    padding: 6px 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BF0930;
+    min-width: 100px;
+}
+.delivery-date .confirmation-email {
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+}
+.delivery-date .confirmation-email span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    line-height: 19px;
+}
+.delivery-date .confirmation-email span img {
+    margin-right: 10px;
+}
+
+.order-summery {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+.order-summery .order-summery-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000;
+    position: relative;
+    margin-bottom: 15px;
+}
+.order-summery .order-summery-header span {
+    opacity: 0;
+}
+.order-summery .order-summery-header:after {
+    position: absolute;
+    content: "";
+    display: block;
+    right: 0;
+    top: 4px;
+    font-weight: 400;
+    font-family: Font Awesome\ 5 Pro;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.order-summery .order-summery-header.collapsed {
+    margin-bottom: 0;
+}
+.order-summery .order-summery-header.collapsed span {
+    opacity: 1;
+}
+.order-summery .order-summery-header.collapsed:after {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.order-summery .order-summery-header span {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #BF0930;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.order-summery .card-body {
+    background: none;
+    border: none;
+    padding: 0;
+}
+.order-summery .card-body .price {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.order-summery .card-body .price li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.order-summery .order-price-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    padding-top: 15px;
+}
+.order-summery .order-price-bottom p {
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+.order-summery .order-price-bottom .right-side {
+    text-align: right;
+}
+.order-summery .order-price-bottom .right-side h4 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #BF0930;
+    font-family: var(--font-roboto);
+}
+.order-summery .order-price-bottom .right-side span {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.continue-shopping-btn {
+    max-width: 190px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    border-radius: 0;
+}
+
+@media (max-width: 1200px) {
+    .gesus-product-ralated-section .container .swiper-arrow.slider-prev {
+        right: auto;
+        left: -50px;
+    }
+
+    .gesus-product-ralated-section .container .swiper-arrow {
+        right: -50px;
+        top: 47%;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .thank-you-wrapper .thank-you-area h2 {
+        font-size: 40px;
+    }
+
+    .gesus-product-ralated-section .container .swiper-arrow {
+        display: none;
+    }
+
+    .delivery-date .delivery-date-table .order-view {
+        display: block;
+    }
+
+    .order-summery .order-summery-header span {
+        font-size: 20px;
+    }
+
+    .order-summery .order-summery-header {
+        padding-right: 25px;
+        font-size: 16px;
+    }
+
+    .order-summery .order-price-bottom .right-side h4 {
+        font-size: 20px;
+    }
+
+    .order-summery .order-price-bottom p {
+        font-size: 16px;
+    }
+}
+/* thank you page css end */
+/*----------------------------------------*/
+.gesus-sermons-items .gesus-sermons-thumb{
+    width: 100%;
+}
+.gesus-our-sermons-section .swiper-slide{
+    max-width: 520px;
+    margin-right: auto;
+    margin-left: 0;
+}
+.sermons-items {
+    max-width: 520px;
+}
+.gesus-sermons-items .gesus-sermons-thumb{
+    max-width: 310px;
+    object-fit: cover;
+}
+.gesus-pagination ul li a{
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.woocommerce-pagination ul li a, .woocommerce-pagination ul li span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    box-shadow: none !important;
+}
+.nice-select .list:hover .option:not(:hover){
+    color: #000;
+}
+.product-categories-items .categories-content ins{
+    text-decoration: none;
+}
+.gesus-sermons-details-wrapper .gesus-sermons-items .gesus-sermons-thumb{
+    max-width: 100% !important;
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+}
+/* banner css start */
+.gesus-banner-section .gesus-banner-wrapper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gesus-banner-section .gesus-banner-wrapper{
+    height: 90vh;
+}
+.gesus-banner-wrapper .swiper-nav{
+    height: 60px;
+    transform: translate(0, -50%);
+}
+.gesus-our-sermons-section .sermons-items img{
+    height: 460px;
+    object-fit: cover;
+}
+.market-industry-thumb img{
+    height: 420px;
+    object-fit: cover;
+}
+/* banner css end */
+@media(max-width: 991px) {
+    .gesus-sermons-items .gesus-sermons-thumb{
+        max-width: 100%;
+    }
+    .market-industry-thumb img{
+        height: auto;
+    }
+    .gesus-our-sermons-section .sermons-items img{
+        height: 360px;
+        object-fit: cover;
+    }
+    .gesus-sermons-details-wrapper .gesus-sermons-items .gesus-sermons-thumb{
+        height: auto;
+        min-height: 300px;
+    }
+}

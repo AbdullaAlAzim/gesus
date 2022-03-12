@@ -1,0 +1,1474 @@
+.col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*--------------------------------------
+	- Utilities
+----------------------------------------*/
+a {
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+}
+
+.swiper-nav .swiper-arrow {
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  color: #BF0930;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  border-radius: 50%;
+}
+.swiper-nav .swiper-arrow:hover, .swiper-nav .swiper-arrow:focus {
+  background: #BF0930;
+  color: #fff;
+}
+.swiper-nav .swiper-arrow:hover i, .swiper-nav .swiper-arrow:focus i {
+  -webkit-animation: leftRight 0.5s;
+          animation: leftRight 0.5s;
+}
+.swiper-nav .swiper-arrow:hover:first-child i, .swiper-nav .swiper-arrow:focus:first-child i {
+  -webkit-animation: rightLeft 0.5s;
+          animation: rightLeft 0.5s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Preloader */
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: heartbeat 0.5s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
+          animation: heartbeat 0.5s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
+  -webkit-transition: all ease-out 0.4s;
+  transition: all ease-out 0.4s;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+  cursor: pointer;
+  background: #BF0930;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: 999;
+  color: #fff;
+  display: none;
+}
+.scroll-top i {
+  display: inline-block;
+  -webkit-animation: BottomToTop 2s ease-out infinite;
+          animation: BottomToTop 2s ease-out infinite;
+}
+
+@media (max-width: 991px) {
+  .swiper-nav .swiper-arrow {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .swiper-nav .swiper-arrow {
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    font-size: 16px;
+  }
+}
+:root {
+  --font-roboto: "Roboto", sans-serif;
+  --font-yeseva: "Yeseva One", cursive;
+  --fw-100: 100;
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+  --fs-12: 0.75rem;
+  --fs-13: 0.8125rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-17: 1.0625rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --clr-black: #000;
+  --clr-white: #000;
+  --text-color: #14183E;
+}
+
+/*----------------------------------------*/
+/* header responsive
+/*----------------------------------------*/
+@media (max-width: 1200px) {
+  .gesus-main-menu ul li {
+    margin: 0px 19px;
+  }
+}
+@media (max-width: 991px) {
+  .main-menu-wrapper {
+    display: none;
+  }
+
+  .gesus-mobile-menu {
+    display: block;
+  }
+
+  .gesus-overlay {
+    display: block;
+  }
+
+  .gesus-main-menu-header {
+    padding: 15px 0;
+  }
+
+  .gesus-top-header {
+    display: none;
+  }
+
+  .home-one-main-header .header-logo {
+    padding: 0;
+    border: none;
+  }
+
+  .home-one-main-header .menu-right-side {
+    padding: 0;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home-one-main-header .menu-right-side ul li:first-child {
+    display: none;
+  }
+  .home-one-main-header .menu-right-side .gesus-nav-open {
+    color: #fff;
+    margin-left: 15px;
+  }
+  .home-one-main-header .menu-right-side .gesus-nav-open span {
+    background: #fff;
+  }
+}
+@media (max-width: 450px) {
+  .header-logo {
+    display: block;
+    width: 110px;
+  }
+}
+/*----------------------------------------*/
+/* banner responsive
+/*----------------------------------------*/
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+  .banner-slide-wrapper {
+    padding: 120px 0;
+  }
+
+  .gesus-banner-content h2 {
+    font-size: 40px;
+  }
+
+  .gesus-banner-content {
+    max-width: 580px;
+  }
+
+  .gesus-alive-banner-wrapper {
+    margin-left: 20px;
+  }
+
+  .gesus-alive-banner-lefttside .shape2 {
+    top: 70px;
+  }
+
+  .gesus-alive-banner-right-side:after {
+    width: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .gesus-banner-content h2 {
+    font-size: 40px;
+  }
+
+  .gesus-banner-content {
+    max-width: 580px;
+  }
+
+  .banner-slide-wrapper {
+    padding: 150px 0;
+  }
+
+  .gesus-banner-wrapper .swiper-nav {
+    padding: 0 10px;
+  }
+
+  .gesus-banner-wrapper .swiper-nav {
+    display: none;
+  }
+
+  .gesus-alive-banner-right-side {
+    display: none;
+  }
+
+  .gesus-alive-banner-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .gesus-alive-banner-lefttside {
+    padding: 40px;
+    height: auto;
+  }
+
+  .gesus-alive-banner-wrapper {
+    height: auto;
+  }
+
+  .gesus-alive-banner-lefttside .shape2 {
+    max-width: 20%;
+    top: 30px;
+    right: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .gesus-banner-content h2 {
+    font-size: 30px;
+  }
+
+  .gesus-alive-banner-wrapper {
+    margin: 0;
+  }
+
+  .gesus-alive-banner-lefttside {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 360px) {
+  .banner-slide-wrapper {
+    padding: 70px 0;
+  }
+}
+/*----------------------------------------*/
+/* news section responsive
+/*----------------------------------------*/
+@media (max-width: 767px) {
+  .gesus-contact-form-wrapper .contact-form {
+    padding: 20px;
+  }
+
+  .gesus-contact-form-wrapper .contact-form .form-title h4 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .gesus-section-title h2 {
+    font-size: 38px;
+  }
+
+  .about-thumb-wrapper {
+    height: 508px;
+  }
+}
+@media (max-width: 991px) {
+  .about-thumb-wrapper {
+    display: none;
+  }
+
+  .gesus-about-church-thumb {
+    margin-bottom: 30px;
+    padding-top: 0;
+  }
+}
+@media (max-width: 575px) {
+  .gesus-about-church-thumb .thumb {
+    display: none;
+  }
+
+  .gesus-about-church-thumb .shape-bg {
+    display: none;
+  }
+
+  .gesus-about-church-thumb .shape-two {
+    display: none;
+  }
+
+  .gesus-about-church-thumb {
+    padding: 0;
+  }
+
+  .gesus-about-church-thumb {
+    height: auto;
+  }
+
+  .gesus-about-church-thumb .gesus-video-play {
+    position: relative;
+    width: 100%;
+  }
+
+  .gesus-about-church-thumb .gesus-video-play img {
+    height: auto;
+    width: 100%;
+  }
+
+  .gesus-about-church-thumb .gesus-video-play .gesus-play-btn {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: absolute;
+  }
+}
+/* video responsive */
+@media (max-width: 991px) {
+  .gesus-video-wrp h3 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .gesus-support-left {
+    margin-bottom: 30px;
+  }
+
+  .gesus-support-wrapper .gesus-support-right {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .gesus-broadcast-content {
+    padding: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .gesus-broadcast-content {
+    padding: 20px;
+  }
+
+  .gesus-broadcast-content .gesus-play-btn {
+    margin-bottom: 30px;
+  }
+
+  .gesus-video-wrp .button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gesus-video-wrp .button-group .gesus-btn {
+    margin: 0;
+    margin-top: 30px;
+  }
+  .gesus-video-wrp .button-group .gesus-btn:first-child {
+    margin: 0;
+  }
+
+  .gesus-blog-post .gesus-post-content .post-title {
+    font-size: 20px;
+  }
+
+  .gesus-support-wrapper .gesus-support-left h2 {
+    font-size: 25px;
+  }
+
+  .gesus-support-wrapper {
+    padding: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .gesus-support-wrapper .gesus-support-right .gesus-play-btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .gesus-services-categories {
+    padding: 30px 12px;
+  }
+
+  .featured-items {
+    padding: 15px;
+  }
+  .featured-items h4 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 991px) {
+  .featured-items-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .featured-items-wrapper .featured-items {
+    width: 50%;
+  }
+
+  .gesus-core-services-section {
+    height: auto;
+    padding: 0;
+  }
+  .gesus-core-services-section:after {
+    height: 100%;
+  }
+
+  .gesus-core-services-section .container {
+    padding: 80px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .services-title {
+    margin-top: 0;
+    padding-bottom: 30px;
+  }
+
+  .gesus-services-section .row div:nth-child(4) .gesus-services-categories {
+    margin-bottom: 30px;
+  }
+  .gesus-services-section .row div:nth-child(5) .gesus-services-categories {
+    margin-bottom: 30px;
+  }
+
+  .featured-items h4 {
+    font-size: 19px;
+  }
+
+  .gesus-core-services-section .container {
+    padding: 50px 15px;
+  }
+}
+@media (max-width: 450px) {
+  .gesus-services-categories {
+    padding: 30px 20px;
+  }
+
+  .gesus-services-categories h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .gesus-services-categories .services-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .gesus-services-categories .services-icon img {
+    width: 60%;
+  }
+
+  .featured-items-wrapper .featured-items {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .gesus-nav-pills li a {
+    padding: 5px 20px;
+    font-size: 16px;
+  }
+
+  .gesus-sermons-agenda-section .gesus-agenda-shape {
+    right: 0px;
+  }
+
+  .sermons-items .gesus-content .description .title {
+    font-size: 18px;
+  }
+
+  .gesus-leatest-sermons-section .section-right-img {
+    right: 0px;
+    bottom: 20px;
+  }
+
+  .gesus-sermons-rightside-content .gesus-social-link {
+    position: relative;
+    z-index: 3;
+  }
+}
+@media (max-width: 991px) {
+  .gesus-nav-pills li a {
+    padding: 2px 15px;
+    font-size: 14px;
+  }
+
+  .gesus-tabs-table table tr th {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .gesus-tabs-table table tr td {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .gesus-tabs-table table tr td .gesus-btn {
+    font-size: 14px;
+    padding: 6px 10px;
+    font-weight: 400;
+  }
+
+  .sermons-items .gesus-content .description .title {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .sermons-items .gesus-content .description p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .sermons-items .gesus-content {
+    padding: 20px;
+  }
+
+  .gesus-brand-section {
+    padding-top: 180px;
+    padding-bottom: 460px;
+  }
+
+  .gesus-our-sermons-section {
+    margin: 0;
+    padding-bottom: 80px;
+  }
+
+  .gesus-leatest-sermons-section {
+    margin: 0;
+    background: #F5F5F5;
+    padding: 80px 0;
+  }
+  .gesus-leatest-sermons-section:after {
+    display: none;
+  }
+
+  .gesus-leatest-sermons-thumb {
+    margin-bottom: 30px;
+  }
+
+  .gesus-brand-section {
+    padding: 80px 0;
+  }
+
+  .gesus-sermons-rightside-content .gesus-social-link {
+    position: relative;
+    z-index: 3;
+  }
+
+  .gesus-leatest-sermons-thumb img {
+    height: 400px;
+  }
+
+  .gesus-player-area {
+    bottom: 30px;
+  }
+
+  .gesus-sermons-rightside-content .gesus-music-change {
+    display: none;
+  }
+
+  .gesus-sermons-items {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .gesus-tabs-table table tr th {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .gesus-tabs-table table tr td {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .gesus-nav-pills li {
+    margin: 0;
+  }
+
+  .gesus-nav-pills li a {
+    padding: 2px 12px;
+    font-size: 12px;
+  }
+
+  .gesus-our-sermons-section, .gesus-brand-section, .gesus-leatest-sermons-section {
+    padding: 50px 0;
+  }
+
+  .gesus-sermons-items .gesus-sermons-content .gesus-title .title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .gesus-sermons-items .gesus-sermons-content {
+    padding: 10px;
+    padding-bottom: 0;
+  }
+
+  .gesus-sermons-items .gesus-sermons-content .gesus-author {
+    display: block;
+  }
+
+  .gesus-sermons-items .gesus-sermons-content .gesus-action {
+    margin-top: 15px;
+  }
+
+  .gesus-sermons-items .gesus-sermons-content .gesus-author .author-title span {
+    font-size: 10px;
+  }
+
+  .gesus-sermons-items .gesus-sermons-content .gesus-author .author-date {
+    font-size: 10px;
+  }
+
+  .gesus-sermons-big .gesus-sermons-thumb img {
+    height: 370px;
+  }
+
+  .gesus-sermons-big .gesus-sermons-thumb .gesus-audio div.maudio .audio-control a.play {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+  }
+
+  .gesus-sermons-big .gesus-sermons-thumb .gesus-audio div.maudio .audio-control .mute {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+  }
+
+  .gesus-sermons-details-content .gesus-top-title .title {
+    font-size: 22px;
+  }
+
+  .gesus-sermons-details .title {
+    font-size: 22px;
+  }
+
+  .gesus-sermons-details-content {
+    padding: 15px;
+    padding-bottom: 0;
+  }
+
+  .gesus-sermons-details-video {
+    margin-bottom: 30px;
+  }
+
+  .row div:last-child .gesus-sermons-details-video {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 575px) {
+  .gesus-tabs-table {
+    overflow-x: auto;
+  }
+  .gesus-tabs-table table {
+    min-width: 600px;
+  }
+
+  .gesus-our-sermons-wrapper {
+    padding: 0 15px;
+  }
+
+  .gesus-sermons-rightside-content .gesus-social-link a {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+  }
+
+  .gesus-sermons-items .gesus-sermons-thumb {
+    min-width: unset;
+  }
+
+  .gesus-sermons-details-content .gesus-top-title {
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+
+  .gesus-sermons-details {
+    margin-top: 15px;
+  }
+
+  .gesus-sermons-details p {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .testimonial-thumb .thumb {
+    min-width: unset;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .testimonial-thumb .thumb {
+    margin-bottom: 50px;
+  }
+
+  .testimonial-two .thumb {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .testimonial-slide-wrapper .swiper-nav {
+    position: unset;
+    margin-top: 30px;
+  }
+
+  .gesus-testimonial-content .author .title {
+    font-size: 16px;
+  }
+}
+/*----------------------------------------*/
+/* blog responsive
+/*----------------------------------------*/
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .blog-card .card-description {
+    padding: 13px;
+  }
+
+  .blog-card .card-description .author-date a {
+    font-size: 12px;
+  }
+
+  .blog-card .card-description .post-title {
+    font-size: 18px;
+  }
+
+  .gesus-wedgets-area .widget {
+    padding: 20px;
+  }
+
+  .blog-post-categories .post-content .post-title {
+    font-size: 15px;
+  }
+
+  .gesus-wedgets .gesus-popular-tags li a {
+    font-size: 14px;
+  }
+
+  .toproviding-customers h3 {
+    font-size: 30px;
+  }
+
+  .post-details-title h3 {
+    font-size: 30px;
+  }
+
+  .gesus-events-organizer-items {
+    padding: 15px;
+  }
+  .gesus-events-organizer-items h4 {
+    font-size: 20px;
+  }
+  .gesus-events-organizer-items p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .gesus-card-area {
+    margin-bottom: 30px;
+  }
+
+  .post-details-title h3 {
+    margin-top: -11px;
+  }
+
+  .gesus-comment-form-area {
+    margin-bottom: 30px;
+  }
+
+  .gesus-blog-heading .heading-right {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .post-details-title h3 {
+    font-size: 35px;
+  }
+
+  .toproviding-customers h3 {
+    font-size: 35px;
+  }
+
+  .events-video-thumb img {
+    height: 340px;
+  }
+}
+@media (max-width: 767px) {
+  .post-details-title h3 {
+    font-size: 25px;
+    margin-top: -6px;
+  }
+
+  .toproviding-customers h3 {
+    font-size: 25px;
+  }
+
+  .toproviding-customers .thumb {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .gesus-events-contemporary h3 {
+    font-size: 25px;
+  }
+
+  .gesus-events-share h3 {
+    font-size: 25px;
+  }
+
+  .gesus-leaned-speaker h3 {
+    font-size: 25px;
+  }
+
+  .gesus-event-memories h3 {
+    font-size: 25px;
+  }
+
+  .social-share span {
+    font-size: 30px;
+  }
+
+  .social-share {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .gesus-events-map-wrapper iframe {
+    height: 300px;
+  }
+}
+@media (max-width: 575px) {
+  .blog-card .card-description {
+    padding: 15px;
+  }
+
+  .blog-card .card-description .author-date a {
+    font-size: 12px;
+  }
+
+  .blog-card .card-description .post-title {
+    font-size: 18px;
+  }
+
+  .gesus-wedgets-area .widget {
+    padding: 15px;
+  }
+
+  .post-details-title .author-area {
+    display: block;
+  }
+
+  .market-industry-thumb .content h4 {
+    font-size: 20px;
+  }
+
+  .market-industry-thumb .content {
+    padding: 20px;
+    margin: 0 20px;
+    margin-top: -50px;
+  }
+
+  .toproviding-customers h3 {
+    font-size: 20px;
+  }
+
+  .post-details-title h3 {
+    font-size: 20px;
+  }
+
+  .gesus-details-tags-area {
+    display: block;
+  }
+
+  .gesus-details-tags-area .tags {
+    margin-bottom: 20px;
+  }
+
+  .gesus-comment-area .comment-author {
+    display: block;
+  }
+
+  .gesus-blog-post .gesus-post-thumb .gesus-btn {
+    left: 10px;
+    top: 10px;
+  }
+
+  .post-details-title .author-area .author {
+    margin-top: 15px;
+  }
+
+  .gesus-social-share {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .social-share {
+    width: 100%;
+  }
+
+  .gesus-event-memories-items.memories-big-items .thumb img {
+    height: 300px;
+  }
+}
+@media (max-width: 360px) {
+  .gesus-events-organizer-items {
+    padding: 15px;
+  }
+
+  .gesus-events-organizer-items h4 {
+    font-size: 20px;
+  }
+
+  .gesus-events-organizer-items p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .gesus-categories-items {
+    padding: 35px 20px;
+  }
+}
+@media (max-width: 991px) {
+  .gesus-categories-items {
+    font-size: 19px;
+    padding: 50px;
+    margin-top: 30px;
+  }
+
+  .row div:first-child .gesus-categories-items {
+    margin-top: 0;
+  }
+  .row div:nth-child(2) .gesus-categories-items {
+    margin-top: 0;
+  }
+}
+@media (max-width: 575px) {
+  .row div:nth-child(2) .gesus-categories-items {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline li:before {
+    display: none;
+  }
+
+  .timeline li:nth-child(odd) .timeline-thumb {
+    padding: 0;
+  }
+
+  .timeline li:nth-child(odd) .timeline-thumb img {
+    width: 100%;
+  }
+
+  .timeline-thumb {
+    margin-bottom: 30px;
+  }
+
+  .timeline li:nth-child(odd) .timeline-content {
+    padding: 0;
+    text-align: left;
+  }
+
+  .timeline li:nth-child(even) .timeline-content {
+    padding: 0;
+    text-align: left;
+  }
+
+  .timeline li {
+    margin-top: 30px;
+  }
+
+  .timeline li:nth-child(even) .timeline-thumb {
+    padding: 0;
+  }
+  .timeline li:nth-child(even) .timeline-thumb img {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .timeline-content h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .donation-process-content {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .countdown-items {
+    height: 130px;
+    width: 130px;
+  }
+
+  .gesus-progress-area .price-range-wraper h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .gesus-mission-content-wrapper {
+    padding: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .gesus-our-mission-wrapper {
+    padding: 80px 0;
+  }
+
+  .gesus-mission-video {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .gesus-our-mission-wrapper {
+    padding: 50px 0;
+  }
+
+  .gesus-mission-content-wrapper {
+    padding: 30px 15px;
+  }
+
+  .gesus-mission-content-wrapper .nav li a {
+    font-size: 16px;
+  }
+
+  .gesus-our-mission-section {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .gesus-subscribe-newsletter-wrp .subscribe-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gesus-subscribe-newsletter-wrp .subscribe-form .gesus-btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+  }
+
+  .gesus-subscribe-newsletter-wrp .subscribe-form .form-control {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  .gesus-team-card .card-thumb img {
+    height: 300px;
+  }
+}
+@media (max-width: 575px) {
+  .gesus-team-card .card-thumb img {
+    height: auto;
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .gesus-featured-card .card-body .gesus-card-link .gesus-btn {
+    padding: 12px;
+  }
+
+  .gesus-featured-card .card-body .card-title {
+    font-size: 17px;
+  }
+
+  .featured-card-big .card-body .gesus-section-title .card-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .gesus-donation-wrp .gesus-btn {
+    padding: 10px 26px;
+  }
+}
+@media (max-width: 991px) {
+  .gesus-donation-description {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .featured-card-big .gesus-card-thumb img {
+    height: 300px;
+  }
+
+  .featured-card-big .card-body .gesus-section-title .card-title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .featured-card-big .card-body .gesus-progressbar .ab-progress .progress-indicator-inner .percent {
+    font-size: 28px;
+  }
+
+  .featured-card-big .card-body {
+    padding: 30px 15px;
+  }
+
+  .gesus-donation-wrp h4 {
+    font-size: 18px;
+  }
+
+  .gesus-donation-description .gesus-sermons-details-video {
+    margin-top: 30px;
+  }
+  .gesus-donation-description .gesus-sermons-details-video img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .gesus-featured-card .card-body .gesus-card-link .gesus-btn {
+    padding: 10px;
+  }
+
+  .gesus-donation-wrp.enter-amount .gesus-input-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .gesus-donation-wrp.enter-amount .gesus-input-group .gesus-btn {
+    margin-top: 15px;
+  }
+
+  .breadcrumb-section h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .gesus-events-tabs li {
+    width: 22%;
+  }
+}
+@media (max-width: 991px) {
+  .gesus-events-tabs li {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .gesus-events-tabs li {
+    width: 40%;
+  }
+
+  .gesus-events-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+
+  .gesus-events-items .events-thumb {
+    margin-bottom: 20px;
+  }
+
+  .gesus-events-items .events-content {
+    padding: 0;
+  }
+
+  .gesus-events-items .events-content .title {
+    font-size: 20px;
+  }
+
+  .gesus-events-tabs li a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .gesus-events-tabs li a span {
+    font-size: 12px;
+  }
+
+  .gesus-events-items .events-thumb .event-thumb {
+    height: 80px;
+    width: 80px;
+  }
+
+  .gesus-events-items .events-thumb .back-bg {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .filter-left-side {
+    width: 320px;
+  }
+  .filter-left-side h3 {
+    font-size: 20px;
+  }
+
+  .per-page p {
+    font-size: 12px;
+  }
+
+  .nice-select .current {
+    font-size: 12px;
+  }
+
+  .product-search .input-group .form-control {
+    width: 110px;
+  }
+
+  .gesus-product-details-content .product-title .title-content h3 {
+    font-size: 25px;
+  }
+
+  .gesus-product-thumb .product-thumb-big img {
+    height: 380px;
+  }
+
+  .gesus-product-thumb .product-thumb-big {
+    height: 380px;
+  }
+}
+@media (max-width: 991px) {
+  .per-page {
+    display: none;
+  }
+
+  .product-grid {
+    display: none;
+  }
+
+  .gesus-product-thumb {
+    margin-bottom: 30px;
+  }
+
+  .product-description-tabs li {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .filter-left-side h3 {
+    font-size: 18px;
+  }
+
+  .gesus-product-thumb .product-thumb-big {
+    height: 350px;
+  }
+  .gesus-product-thumb .product-thumb-big img {
+    height: 350px;
+  }
+
+  .product-description-tabs li a {
+    font-size: 16px;
+  }
+
+  .product-description-tabs li {
+    margin-right: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .gesus-product-filter {
+    display: block;
+    text-align: center;
+  }
+
+  .filter-left-side {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .product-search {
+    width: 100%;
+  }
+
+  .gesus-product-card .product-thumb .product-img img {
+    height: 160px;
+  }
+
+  .gesus-product-card .product-description .product-title {
+    font-size: 12px;
+  }
+
+  .gesus-product-card .product-description p {
+    font-size: 10px;
+  }
+  .gesus-product-card .product-description p del {
+    font-size: 8px;
+  }
+
+  .product-description-tabs li {
+    margin-right: 15px;
+  }
+
+  .product-description-tabs li a {
+    font-size: 12px;
+  }
+
+  .gesus-product-details-content .product-title {
+    display: block;
+  }
+
+  .gesus-product-details-content .product-title .title-content h3 {
+    font-size: 24px;
+  }
+
+  .product-thumb-small img {
+    height: 100px;
+  }
+
+  .gesus-product-details-content .product-description .product-action .gesus-btn {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .gesus-product-thumb .product-thumb-big img {
+    height: 250px;
+  }
+
+  .gesus-product-thumb .product-thumb-big {
+    height: 250px;
+  }
+
+  .product-thumb-small img {
+    height: 70px;
+  }
+
+  .gesus-product-details-content .checkout p {
+    font-size: 12px;
+  }
+  .gesus-product-details-content .checkout p span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 991px) {
+  .gesus-cart-total-area {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .gesus-cart-area .gesus-cart-table tr th {
+    font-size: 14px;
+  }
+
+  .gesus-cart-area .gesus-cart-table tr td {
+    font-size: 12px;
+  }
+
+  .number-count .nice-number input {
+    min-width: auto;
+  }
+}
+@media (max-width: 575px) {
+  .gesus-cart-table {
+    min-width: 500px;
+  }
+
+  .gesus-cart-area {
+    overflow-x: auto;
+  }
+}
+@media (max-width: 991px) {
+  .error-wrapper img {
+    max-width: 50%;
+  }
+
+  .error-wrapper h2 {
+    font-size: 30px;
+  }
+}
+/*----------------------------------------*/
+/* footer responsive
+/*----------------------------------------*/
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .gesus-footer-top h3 {
+    font-size: 30px;
+  }
+
+  .gesus-subscribe img {
+    left: -90px;
+    top: -60px;
+  }
+
+  .footer-bottom .gesus-social-link a {
+    width: 32px;
+  }
+}
+@media (max-width: 991px) {
+  .gesus-subscribe img {
+    display: none;
+  }
+
+  .gesus-subscribe {
+    margin: 0;
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+  .footer-logo img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom .gesus-social-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .gesus-footer-top h3 {
+    font-size: 26px;
+  }
+  .gesus-footer-top h3 span {
+    font-size: 26px;
+  }
+
+  .gesus-footer-top {
+    margin-top: -8px;
+  }
+}
+@media (max-width: 575px) {
+  .gesus-subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gesus-subscribe .gesus-btn {
+    margin-top: 30px;
+  }
+}
